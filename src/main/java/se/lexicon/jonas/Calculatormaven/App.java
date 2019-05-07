@@ -30,8 +30,7 @@ public class App {
     	 		System.out.println("Your answer is: " + (calculationPlus(num1, num2)));			
     	 	} else if  (operation.equals("-")){
     	 		System.out.println("Your answer is: " + (calculationSubtract(num1, num2)));
-    	 		
-    	 	} else if (operation.equals("/")) {
+       	 	} else if (operation.equals("/")) {
     	 		System.out.println("Your answer is: " + (calculationDivision(num1, num2)));
     	 	} else if (operation.equals("*")) {
     	 		System.out.println("Your answer is: " + (calculationMultiplication(num1, num2)));
@@ -42,8 +41,9 @@ public class App {
 		if (answer.equals("y")) {
 			System.out.println("Restarting");
 		} else {
-		 System.out.println("Thank you, exiting");
-		 question = false;
+			System.out.println("Thank you, exiting");
+			question = false;
+			input.close();	
 			}
     	 }
 	}
